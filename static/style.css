@@ -1,9 +1,13 @@
+@font-face {
+    font-family: 'CustomFont'; /* Name your font family */
+    src: url('chess.ttf'); /* Locate the .ttf file within your directory*/
+}
 
 * {
 padding:0;
 margin:0;
 text-align: left;
-font-family: Helvetica;
+font-family: 'CustomFont';
 color:#000;
 text-shadow: 0px 0px 10px #eeeeee;
 }
@@ -16,7 +20,7 @@ font-family: sans-serif;
 display: flex;
 align-items: center;
 justify-content: center;
-background-image: url(background.jpg);
+background-color: #555;
 background-size: cover;
 height: 100vh;
 letter-spacing: normal;
@@ -39,12 +43,16 @@ border-radius: 10px;
 }
 
 h1 {
-font: normal 4em 'New Times Roman', georgia;
+font: normal 4em 'Courier New';
 position: absolute;
 align-content: center;
 top: 5%;
-color: #000;
-text-shadow: 0px 0px 10px #fff;
+color: #fff;
+text-shadow:
+3px 0 black,
+0 -3px black,
+-3px 0 black,
+0 3px black;
 }
 
 p {
@@ -52,8 +60,12 @@ p {
     position: absolute;
     align-content: center;
     bottom: 5%;
-    color: #000;
-    text-shadow: 0px 0px 10px #fff;
+    color: #fff;
+    text-shadow:
+    1px 0 black,
+    0 -1px black,
+    -1px 0 black,
+    0 1px black;
     }
 
 #chess-board {
@@ -68,7 +80,7 @@ p {
 }
 
 .black {
-    background-color: rgba(141, 141, 141, 0.8);
+    background-color: rgba(141, 141, 141, 1);
 }
 
 #chess-board div {
