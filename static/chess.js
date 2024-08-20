@@ -3,8 +3,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const undoButton = document.getElementById('undo-button');
     const size = 8;
     const pieces = {
-        'R': '♖', 'N': '♘', 'B': '♗', 'Q': '♕', 'K': '♔', 'P': '♙',
-        'r': '♜', 'n': '♞', 'b': '♝', 'q': '♛', 'k': '♚', 'p': '♟'
+        'R': 't', 'N': 'j', 'B': 'n', 'Q': 'w', 'K': 'l', 'P': 'o',
+        'r': 'r', 'n': 'h', 'b': 'b', 'q': 'q', 'k': 'k', 'p': 'p'
     };
 
     const initialBoard = [
